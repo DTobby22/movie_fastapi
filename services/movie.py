@@ -29,7 +29,7 @@ class MovieService():
         self.db.commit()
         return
 
-    def delete_movie(self, id: int):
-        self.db.delete(Movie_Model).filter(Movie_Model.id == id)
+    def delete_movie(self, result):
+        self.db.delete(result)        
         self.db.commit()
-    
+        return

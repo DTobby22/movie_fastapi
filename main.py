@@ -11,7 +11,4 @@ app.add_middleware(ErrorHandler)
 app.include_router(movie_router)
 app.include_router(user_router)
 
-Base.metadata.create_all(bind=engine)
-
-
-
+Base.metadata.create_all(bind=engine) #Crea las tablas de la BD
